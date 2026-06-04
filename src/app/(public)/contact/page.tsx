@@ -76,7 +76,7 @@ export default function ContactPage() {
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="ชื่อของคุณ"
                   required
-                  className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
+                  className="mt-1 bg-gray-50 border-gray-300 hover:border-gray-500 hover:bg-white focus:border-foreground focus:bg-white transition-colors duration-200"
                 />
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   placeholder="0X-XXXX-XXXX"
-                  className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
+                  className="mt-1 bg-gray-50 border-gray-300 hover:border-gray-500 hover:bg-white focus:border-foreground focus:bg-white transition-colors duration-200"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="your@email.com"
                 required
-                className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
+                className="mt-1 bg-gray-50 border-gray-300 hover:border-gray-500 hover:bg-white focus:border-foreground focus:bg-white transition-colors duration-200"
               />
             </div>
             <div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                 placeholder="คำถาม หรือข้อความที่ต้องการส่งถึงเรา..."
                 required
                 rows={5}
-                className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground resize-none"
+                className="mt-1 bg-gray-50 border-gray-300 hover:border-gray-500 hover:bg-white focus:border-foreground focus:bg-white transition-colors duration-200 resize-none"
               />
             </div>
             <Button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
