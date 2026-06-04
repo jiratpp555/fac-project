@@ -13,7 +13,7 @@ function formatPrice(price: number) {
 
 export default async function CoursesPage() {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("courses")
     .select("*, teacher:teachers(name, specialty), schedules:course_schedules(*)")
     .eq("is_active", true)

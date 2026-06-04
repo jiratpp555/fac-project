@@ -6,7 +6,7 @@ export const metadata = { title: "ผู้สอนของเรา — FAC" 
 
 export default async function TeachersPage() {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("teachers")
     .select("*")
     .eq("is_active", true)
