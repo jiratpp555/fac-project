@@ -4,9 +4,8 @@ import { createClient } from "@/lib/supabase/server";
 import { enrollmentConfirmedEmail } from "@/lib/email/templates";
 import { DAY_NAMES } from "@/lib/types";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { enrollmentId } = await request.json();
   if (!enrollmentId) return NextResponse.json({ error: "enrollmentId required" }, { status: 400 });
 
