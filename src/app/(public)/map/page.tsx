@@ -3,10 +3,10 @@ import { MapPin, Clock, Phone, Mail } from "lucide-react";
 export const metadata = { title: "แผนที่ Studio — FAC" };
 
 const EMBED_URL =
-  "https://maps.google.com/maps?q=11/1+%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%9E%E0%B8%AB%E0%B8%A5%E0%B9%82%E0%B8%A2%E0%B8%98%E0%B8%B4%E0%B8%99+8+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%83%E0%B8%99+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%84%E0%B8%97+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10400&output=embed&hl=th";
+  "https://maps.google.com/maps?q=11/1+Soi+Phahon+Yothin+8,+Samsen+Nai,+Phaya+Thai,+Bangkok+10400,+Thailand&output=embed&hl=th&z=17";
 
 const GMAPS_URL =
-  "https://www.google.com/maps?daddr=11/1+%E0%B8%8B%E0%B8%AD%E0%B8%A2+%E0%B8%9E%E0%B8%AB%E0%B8%A5%E0%B9%82%E0%B8%A2%E0%B8%98%E0%B8%B4%E0%B8%99+8+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%83%E0%B8%99+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%84%E0%B8%97+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3+10400";
+  "https://www.google.com/maps/search/11/1+Soi+Phahon+Yothin+8,+Samsen+Nai,+Phaya+Thai,+Bangkok+10400,+Thailand";
 
 export default function MapPage() {
   return (
