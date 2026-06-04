@@ -64,7 +64,7 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="rounded-xl border border-white/10 bg-card p-6">
+        <form onSubmit={handleSubmit} className="rounded-xl border border-border bg-white p-6 shadow-sm">
           <h2 className="mb-5 font-semibold">ส่งข้อความหาเรา</h2>
           <div className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="ชื่อของคุณ"
                   required
-                  className="mt-1 bg-background border-white/20"
+                  className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
                 />
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   placeholder="0X-XXXX-XXXX"
-                  className="mt-1 bg-background border-white/20"
+                  className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="your@email.com"
                 required
-                className="mt-1 bg-background border-white/20"
+                className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground"
               />
             </div>
             <div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                 placeholder="คำถาม หรือข้อความที่ต้องการส่งถึงเรา..."
                 required
                 rows={5}
-                className="mt-1 bg-background border-white/20 resize-none"
+                className="mt-1 bg-gray-50 border-gray-300 focus:border-foreground resize-none"
               />
             </div>
             <Button type="submit" disabled={loading} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
